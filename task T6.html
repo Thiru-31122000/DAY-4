@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Table
+    </title>
+    <style>
+        table{
+            text-align: left;
+            position: relative;
+            border-collapse: collapse;
+            background-color: rgb(241, 13, 13);
+        }
+        td,th{
+            border: 1px solid blueviolet;
+            padding: 20px;
+        }
+        th{
+            background: brown;
+            color: white;
+            border-radius: 0;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+        }
+        .primary{
+            background-color:black;
+        }
+        tfoot> tr:hover{
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>college coures</caption>
+        <thead>
+            <tr>
+                <th class="primary" scope="col"> college name </th>
+                <th scope="col" >subject</th>   
+                <th scope="col">course</th>
+                <th scope="col">duration</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+             <th scope="row">DBC</th>
+             <td>Tamil</td>
+             <td>BA</td>
+             <td>3years</td>
+        </tr>
+         <tr>
+              <th scope="row">JSV</th>
+              <td>english</td>
+              <td>BA</td>
+              <td>3years</td>
+       </tr>
+        <tr>
+              <th scope="row">GAC</th>
+              <td>Maths</td>
+              <td>B,Sc</td>
+              <td>3years</td>
+        </tr>
+    </tbody>
+    <tfoot>
+              <th>total courses</th>
+              <td colspan="4"><i>why u all waiting crap this courses</i></td>
+    </tfoot>
+    </table>
+</body>
+</html>
